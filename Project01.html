@@ -6,19 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projeto 01</title>
   </head>
-  <body style="text-align: center">
-    <h1>Qual dessas marcas de carro você gosta mais?</h1>
-    <h2>Which of these car brand do you like the most?</h2>
-
+  <body>
+    <section class="container flex">
+      <div class="item">Qual dessas marcas de carro você gosta mais?</div>
+      <div class="item">Which of these car brand do you like the most?</div>
+    </section>
     <style>
-      h1 {
-        background-color: #ffffff;
+      .container-flex {
+        display: block;
+        flex-wrap: wrap;
+        max-width: 400px;
+        margin: 0 auto;
+        text-align: center;
       }
-      h2 {
+      .flex-wrap {
+        flex-wrap: wrap;
+      }
+      .flex {
+        display: flex;
+      }
+      .container {
+        text-align: center;
+        font-size: 20px;
         background-color: #ffffff;
-        background-size: 10px 10px 10px 10px;
-        background-position-x: center;
-        background-position-y: center;
+        max-width: 380px;
+        margin: 0 auto;
+        border: 3px solid #000000;
       }
       body {
         background-image: url(https://fotos.jornaldocarro.estadao.com.br/primeira-classe/files/2016/07/marcas-reuters.jpg);
@@ -26,30 +39,32 @@
       button {
         background-color: #ffffff;
         border: solid 2px #ff0000;
+        margin: auto;
       }
       button:hover {
-        background-color: #929292;
+        background-color: darkgray;
       }
     </style>
-    <button>Mazda</button>
-    <button>Mercedez Benz</button>
-    <button>Ferrari</button>
-    <button>Alfa Romeo</button>
-    <button>Rolls Royce</button>
-    <button>Pagani</button>
-    <button>Lamborghini</button>
-    <button>Mclaren</button>
-    <button>Chevrolet</button>
-    <button>Dodge</button>
-    <button>Aston Martin</button>
-    <button>BMW</button>
-    <button>Porsche</button>
-    <button>Lexus</button>
-    <button>Lotus</button>
-    <button>Maserati</button>
-    <button>Bugatti</button>
-    <button>Mitsubishi</button>
-
+    <section class="container-flex flex-wrap">
+      <button>Mazda</button>
+      <button>Mercedez Benz</button>
+      <button>Ferrari</button>
+      <button>Alfa Romeo</button>
+      <button>Rolls Royce</button>
+      <button>Pagani</button>
+      <button>Lamborghini</button>
+      <button>Mclaren</button>
+      <button>Chevrolet</button>
+      <button>Dodge</button>
+      <button>Aston Martin</button>
+      <button>BMW</button>
+      <button>Porsche</button>
+      <button>Lexus</button>
+      <button>Lotus</button>
+      <button>Maserati</button>
+      <button>Bugatti</button>
+      <button>Mitsubishi</button>
+    </section>
     <script></script>
   </body>
 </html>
