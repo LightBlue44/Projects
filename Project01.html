@@ -1,54 +1,72 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projeto 01</title>
-  </head>
-  <body>
-    <section class="container flex">
-      <div class="item">Qual dessas marcas de carro você gosta mais?</div>
-      <div class="item">Which of these car brand do you like the most?</div>
-    </section>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
-      .container-flex {
-        position: relative;
-        flex-wrap: wrap;
-        max-width: 400px;
-        margin: 0 auto;
-        text-align: center;
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
       }
-      .flex-wrap {
-        flex-wrap: wrap;
-      }
-      .flex {
-        display: flex;
-      }
-      .container {
-        text-align: center;
-        font-size: 20px;
-        background-color: #ffffff;
-        max-width: 380px;
-        margin: 0 auto;
-        border: 3px solid #000000;
-      }
-      body {
-        background-image: url(https://media.discordapp.net/attachments/884624631833714698/985307283389034646/limpeza-em-concessionaria-de-automoveis-02.jpg?width=806&height=453);
-        background-size: cover;
-        background-image: ;
+      * {
+        box-sizing: border-box;
       }
       button {
         background-color: #ffffff;
-        border: solid 2px #ff0000;
-        margin: auto;
+        border: solid #ff0000;
+        border-radius: 2px;
       }
       button:hover {
         background-color: #a9a9a9;
-;
+      }
+      .bg-image {
+        /* The image used */
+        background-image: url("https://www.sanitecsolution.com.br/images/servicos/limpeza-em-concessionaria-de-automoveis-02.jpg");
+
+        /* Add the blur effect */
+        filter: blur(8px);
+        -webkit-filter: blur(2px);
+
+        /* Full height */
+        height: 100%;
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .item {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 400px;
+        position: absolute;
+        top: 50%;
+        left: 35%;
+        transform: translate(-0%, -20%);
+        z-index: 5;
+      }
+
+      /* Position text in the middle of the page/image */
+      .bg-text {
+        background-color: #000000; /* Fallback color */
+        background-color: #00000066; /* Black w/opacity/see-through */
+        color: #ffffff;
+        font-weight: bold;
+        border: 3px solid #f1f1f1;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        width: 70%;
+        padding: 20px;
+        text-align: center;
       }
     </style>
-    <section class="container-flex flex-wrap">
+  </head>
+  <body>
+    <section class="item">
       <button>Mazda</button>
       <button>Mercedez Benz</button>
       <button>Ferrari</button>
@@ -67,8 +85,12 @@
       <button>Maserati</button>
       <button>Bugatti</button>
       <button>Mitsubishi</button>
-      <button onclick="URL:/youtu.be/dQw4w9WgXcQ">...</button>
     </section>
-    <script></script>
+    <div class="bg-image"></div>
+
+    <div class="bg-text">
+      <h2>What is your favorite car brand?</h2>
+      <h1 style="font-size: 50px">Qual é a sua marca de carro favorita?</h1>
+    </div>
   </body>
 </html>
