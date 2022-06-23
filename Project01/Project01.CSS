@@ -1,0 +1,73 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  margin-right: 5px;
+  margin-top: 5px;
+  color: #ffffff;
+  background-color: #00000096;
+  border: solid #ff0000;
+  border-radius: 2px;
+  flex-wrap: wrap;
+}
+
+button:hover {
+  background-color: #919191;
+}
+.bg-image {
+  /* The image used */
+  background-image: url("https://www.sanitecsolution.com.br/images/servicos/limpeza-em-concessionaria-de-automoveis-02.jpg");
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(2px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.item {
+  flex-wrap: wrap;
+  max-width: 400px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 35%;
+  transform: translate(-0%, -20%);
+  z-index: 5;
+}
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: #000000;
+  /* Fallback color */
+  background-color: #00000096;
+  /* Black w/opacity/see-through */
+  color: #ffffff;
+  font-weight: bold;
+  border: 3px solid #ffffff;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 70%;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+}
